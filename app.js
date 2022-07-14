@@ -1,7 +1,8 @@
 const express = require('express')
 const app = express()
+const port = 5000
 
-app.listen(5000, () => console.log('Server running at http://127.0.0.1:5000'))
+app.listen(process.env.PORT || port, () => console.log(`Server running at http://localhost:${port}`))
 
 app.get('/', (req, res) => {
     res.sendFile('./views/index.html', { root: __dirname })

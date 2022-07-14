@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "mocha || true",
-    "start": "npx nodemon app"
+    "start": "node app"
   },
   "author": "",
   "license": "ISC",
