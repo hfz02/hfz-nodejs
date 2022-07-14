@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "node test",
+    "test": "mocha || true",
     "start": "npx nodemon app"
   },
   "author": "",
@@ -14,6 +14,8 @@
     "nodemon": "^2.0.19"
   },
   "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
     "nodemon": "^2.0.19"
   }
 }
